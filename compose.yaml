@@ -16,6 +16,7 @@ services:
     # create and attach a volume to /var/lib/postgresql/data
     volumes:
       - postgres_data:/var/lib/postgresql/data
+
     # given: healthcheck
     # basically just checks that postgres is up and ready
     healthcheck:
@@ -40,6 +41,13 @@ services:
       # (DB_HOST (the name of the service our db is in)
       #, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME, 
       # and (this container's) PORT 8080)
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_USER: postgres
+      DB_PASSWORD: password
+      DB_NAME: mydatabase
+      POST: 8080
 
     # TODO: 
       # set our app to run on port 8080
