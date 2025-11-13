@@ -4,7 +4,7 @@ services:
 
     # TODO: 
     # define image (if our container is named postgres_db... i wonder... use 16 as the version.)
-    image: postgress:16
+    image: postgres:16
     # define ports (postgres default port is 5432)
     ports:
       - "5432:5432"
@@ -47,7 +47,7 @@ services:
       DB_USER: postgres
       DB_PASSWORD: password
       DB_NAME: mydatabase
-      POST: 8080
+      PORT: 8080
 
     # TODO: 
       # set our app to run on port 8080
