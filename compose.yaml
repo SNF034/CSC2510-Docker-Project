@@ -9,6 +9,10 @@ services:
     ports:
       - "5432:5432"
     # define environment (POSTGRES_USER, POSTGRES_PASSWORD, and POSTGRES_DB (can be found in the code)
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydatabase
     # create and attach a volume to /var/lib/postgresql/data
 
     # given: healthcheck
