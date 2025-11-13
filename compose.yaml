@@ -51,6 +51,8 @@ services:
 
     # TODO: 
       # set our app to run on port 8080
+    ports:
+      - "8080:8080"
 
 
 # TODO: 
