@@ -17,3 +17,4 @@ FROM alpine:3.20
     # expose port 8080 
     EXPOSE port 8080
     # run our server using CMD and ./server
+    CMD ["./server"]
