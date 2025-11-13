@@ -4,6 +4,7 @@ services:
 
     # TODO: 
     # define image (if our container is named postgres_db... i wonder... use 16 as the version.)
+    image: postgress:16
     # define ports (postgres default port is 5432)
     # define environment (POSTGRES_USER, POSTGRES_PASSWORD, and POSTGRES_DB (can be found in the code)
     # create and attach a volume to /var/lib/postgresql/data
